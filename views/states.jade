@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div#content-wrapper
+    div#content
+      div.container
+        div.row
+          div.8u.12u(mobile)
+            header
+              h2= h2
+            section
+              ul.check-list
+              - each state in states
+                li
+                  a(href="/states/#{state.fuel}/#{state.state}") #{state.fuel} price in #{state.state}
+
+          div.4u.12u(mobile)
+            header
+              h2 Ads
+            section
+              script(async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+              ins.adsbygoogle(style="display:block" data-ad-client="ca-pub-8243644395830884" data-ad-slot="3356822833" data-ad-format="auto")
+              script (adsbygoogle = window.adsbygoogle || []).push({})

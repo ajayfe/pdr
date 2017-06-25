@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  div#content-wrapper
+    div#content
+      div.container
+        div.row
+          div.8u.12u(mobile)
+            header
+              h2 #{fuel} price in #{state} as on #{updated}
+            - for (var i in prices)
+              - if(prices[i].length)
+                  section
+                    header
+                      h3 #{fuel} price in #{i.toUpperCase()} pumps
+                    ul.check-list
+                      - for (var j in prices[i])
+                        li
+                          strong.ajay #{fuel} price in #{prices[i][j].city} -
+                          ₹ #{prices[i][j].price}
+          div.4u.12u(mobile)
+            header
+              h2 Ads
+            section
+              script(async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+              ins.adsbygoogle(style="display:block" data-ad-client="ca-pub-8243644395830884" data-ad-slot="3356822833" data-ad-format="auto")
+              script (adsbygoogle = window.adsbygoogle || []).push({})

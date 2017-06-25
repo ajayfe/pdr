@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href=locals.basedir+'/css/main.css')
+    meta(name='description', content=metaDescription)
+    meta(name='keywords', content=metaKeywords)
+  body
+    div#page-wrapper
+      div#header-wrapper
+        header#header.container
+          div.row
+            div.12u
+              h1
+                a#logo(href="/") petroldieselrate.com
+              nav#nav
+                a#logo(href="/") Homepage
+                a#logo(href="/states") StateList
+      block content
+      div#footer-wrapper
+        div#copyright
+          &copy; petroldieselrate.com. All rights reserved. |
+          Design: a(href="http://html5up.net" target="_blank") HTML5 UP

@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  div#banner
+    div.container
+      div.row
+        div.6u.12u(mobile)
+          p.colorDiff Petrol and Diesel price of your State, City or Nearest City...
+          a.button-big(href='/states') Go for State list
+        div.6u.12u(mobile)
+          a.bordered-feature-image
+            img(src="images/refuel-2157211_640.jpg" alt="")
+  div#features-wrapper
+    div#features
+      div.container
+        div.row
+          div.3u.12u(mobile)
+            section
+              a.bordered-feature-image(href="/states")
+                img(src="images/qutub-minar-2155776_640.jpg" height="171" alt="")
+              h2
+                a(href="/states/Petrol/Delhi") Petrol Price in Delhi
+              h2
+                a(href="/states/Diesel/Delhi") Diesel Price in Delhi
+          div.3u.12u(mobile)
+            section
+              a.bordered-feature-image(href="/states")
+                img(src="images/india-294_640.jpg" height="171" alt="")
+              h2
+                a(href="/states/Petrol/Maharashtra") Petrol Price in Maharashtra
+              h2
+                a(href="/states/Diesel/Maharashtra") Diesel Price in Maharashtra
+          div.3u.12u(mobile)
+            section
+              a.bordered-feature-image(href="/states")
+                img(src="images/bridge-167041_640.jpg" height="171" alt="")
+              h2
+                a(href="/states/Petrol/West Bengal") Petrol Price in West Bengal
+              h2
+                a(href="/states/Diesel/West Bengal") Diesel Price in West Bengal
+          div.3u.12u(mobile)
+            section
+              a.bordered-feature-image(href="/states")
+                img(src="images/vivekananda-rock-memorial-726159_640.jpg" height="171" alt="")
+              h2
+                a(href="/states/Petrol/Tamil Nadu") Petrol Price in Tamil Nadu
+              h2
+                a(href="/states/Diesel/Tamil Nadu") Diesel Price in Tamil Nadu
